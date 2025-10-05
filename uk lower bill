@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UK Lower Bills — Fixed Energy Plans</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">UK Lower Bills</a>
+  </div>
+</nav>
+
+<header class="bg-primary text-white py-5">
+  <div class="container text-center">
+    <h1 class="display-6">Fix your energy price — 1, 3 or 5 year plans</h1>
+    <p>Stable bills. No surprises. Quick signup.</p>
+    <a href="#plans" class="btn btn-light">View Plans</a>
+  </div>
+</header>
+
+<section id="plans" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Our Plans</h2>
+    <div class="row g-4">
+      <!-- 1 Year -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">1 Year Plan</h5>
+            <p class="card-text">Quick start, flexible renewal. Fixed rates for 12 months.</p>
+            <ul>
+              <li>Fixed rate for 1 year</li>
+              <li>24/7 customer support</li>
+              <li>Simple billing</li>
+            </ul>
+            <p class="h4">£XX / month</p>
+            <a href="#contact" class="btn btn-primary">Get Quote</a>
+          </div>
+        </div>
+      </div>
+      <!-- 3 Year -->
+      <div class="col-md-4">
+        <div class="card h-100 border-primary">
+          <div class="card-body">
+            <h5 class="card-title">3 Year Plan</h5>
+            <p class="card-text">Best value for stability and savings.</p>
+            <ul>
+              <li>Fixed rate for 3 years</li>
+              <li>Price protection</li>
+              <li>Priority support</li>
+            </ul>
+            <p class="h4">£YY / month</p>
+            <a href="#contact" class="btn btn-primary">Get Quote</a>
+          </div>
+        </div>
+      </div>
+      <!-- 5 Year -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">5 Year Plan</h5>
+            <p class="card-text">Maximum protection against rising prices.</p>
+            <ul>
+              <li>Fixed rate for 5 years</li>
+              <li>Lowest long-term rate</li>
+              <li>Dedicated account manager</li>
+            </ul>
+            <p class="h4">£ZZ / month</p>
+            <a href="#contact" class="btn btn-primary">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q1">
+            Can I cancel early?
+          </button>
+        </h2>
+        <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Short answer: There may be an early exit fee — full details provided at signup.</div>
+        </div>
+      </div>
+      <!-- add more items -->
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2>Contact / Get Quote</h2>
+    <form action="#" method="post">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <input class="form-control" placeholder="Full name" required>
+        </div>
+        <div class="col-md-4">
+          <input class="form-control" placeholder="Email" type="email" required>
+        </div>
+        <div class="col-md-4">
+          <input class="form-control" placeholder="Postcode (UK)" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="3" placeholder="Message / preferred plan"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success">Send</button>
+        </div>
+      </div>
+    </form>
+    <small class="text-muted">Tip: replace form action with Netlify Forms or Formspree to capture leads.</small>
+  </div>
+</section>
+
+<footer class="py-3 bg-dark text-white text-center">
+  <div class="container">
+    &copy; <span id="year"></span> UK Lower Bills — Terms apply.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
